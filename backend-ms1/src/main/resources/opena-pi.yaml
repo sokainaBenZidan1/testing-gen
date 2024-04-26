@@ -1,0 +1,489 @@
+openapi: 3.0.3
+info:
+  title: Title
+  description: Title
+  version: 1.0.0
+servers:
+  - url: 'https'
+paths:
+  /employes:
+    get:
+      summary: List all employes
+      operationId: listEmployes
+      tags:
+        - employes
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of employes
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Employes'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a employe
+      operationId: createEmployes
+      tags:
+        - employes
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /employes/{employeId}:
+    get:
+      summary: Info for a specific employe
+      operationId: showEmployeById
+      tags:
+        - employes
+      parameters:
+        - name: employeId
+          in: path
+          required: true
+          description: The id of the employe to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Employes'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /budgetCompteBudgetaires:
+    get:
+      summary: List all budgetCompteBudgetaires
+      operationId: listBudgetCompteBudgetaires
+      tags:
+        - budgetCompteBudgetaires
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of budgetCompteBudgetaires
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/BudgetCompteBudgetaires'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a budgetCompteBudgetaire
+      operationId: createBudgetCompteBudgetaires
+      tags:
+        - budgetCompteBudgetaires
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /budgetCompteBudgetaires/{budgetCompteBudgetaireId}:
+    get:
+      summary: Info for a specific budgetCompteBudgetaire
+      operationId: showBudgetCompteBudgetaireById
+      tags:
+        - budgetCompteBudgetaires
+      parameters:
+        - name: budgetCompteBudgetaireId
+          in: path
+          required: true
+          description: The id of the budgetCompteBudgetaire to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/BudgetCompteBudgetaires'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /budgetEntiteAdmins:
+    get:
+      summary: List all budgetEntiteAdmins
+      operationId: listBudgetEntiteAdmins
+      tags:
+        - budgetEntiteAdmins
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of budgetEntiteAdmins
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/BudgetEntiteAdmins'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a budgetEntiteAdmin
+      operationId: createBudgetEntiteAdmins
+      tags:
+        - budgetEntiteAdmins
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /budgetEntiteAdmins/{budgetEntiteAdminId}:
+    get:
+      summary: Info for a specific budgetEntiteAdmin
+      operationId: showBudgetEntiteAdminById
+      tags:
+        - budgetEntiteAdmins
+      parameters:
+        - name: budgetEntiteAdminId
+          in: path
+          required: true
+          description: The id of the budgetEntiteAdmin to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/BudgetEntiteAdmins'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /budgets:
+    get:
+      summary: List all budgets
+      operationId: listBudgets
+      tags:
+        - budgets
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of budgets
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/Budgets'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a budget
+      operationId: createBudgets
+      tags:
+        - budgets
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /budgets/{budgetId}:
+    get:
+      summary: Info for a specific budget
+      operationId: showBudgetById
+      tags:
+        - budgets
+      parameters:
+        - name: budgetId
+          in: path
+          required: true
+          description: The id of the budget to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Budgets'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /compteBudgetaires:
+    get:
+      summary: List all compteBudgetaires
+      operationId: listCompteBudgetaires
+      tags:
+        - compteBudgetaires
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of compteBudgetaires
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/CompteBudgetaires'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a compteBudgetaire
+      operationId: createCompteBudgetaires
+      tags:
+        - compteBudgetaires
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /compteBudgetaires/{compteBudgetaireId}:
+    get:
+      summary: Info for a specific compteBudgetaire
+      operationId: showCompteBudgetaireById
+      tags:
+        - compteBudgetaires
+      parameters:
+        - name: compteBudgetaireId
+          in: path
+          required: true
+          description: The id of the compteBudgetaire to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/CompteBudgetaires'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /entiteAdmins:
+    get:
+      summary: List all entiteAdmins
+      operationId: listEntiteAdmins
+      tags:
+        - entiteAdmins
+      parameters:
+        - name: limit
+          in: query
+          description: How many items to return at one time (max 100)
+          required: false
+          type: integer
+          format: int32
+      responses:
+        "200":
+          description: A paged array of entiteAdmins
+          headers:
+            x-next:
+              type: string
+              description: A link to the next page of responses
+          schema:
+            $ref: '#/definitions/EntiteAdmins'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      summary: Create a entiteAdmin
+      operationId: createEntiteAdmins
+      tags:
+        - entiteAdmins
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /entiteAdmins/{entiteAdminId}:
+    get:
+      summary: Info for a specific entiteAdmin
+      operationId: showEntiteAdminById
+      tags:
+        - entiteAdmins
+      parameters:
+        - name: entiteAdminId
+          in: path
+          required: true
+          description: The id of the entiteAdmin to retrieve
+          type: string
+      responses:
+        "200":
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/EntiteAdmins'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  
+
+
+definitions:
+  Employe:
+    type: "object"
+    required:
+      - id
+      - nom
+      - prenom
+    properties:
+      id:
+        type: int
+      nom:
+        type: string
+      prenom:
+        type: string
+  Employes:
+    type: array
+    items:
+      $ref: '#/definitions/Employe'
+  BudgetCompteBudgetaire:
+    type: "object"
+    required:
+      - id
+      - montant
+    properties:
+      id:
+        type: int
+      montant:
+        type: number
+  BudgetCompteBudgetaires:
+    type: array
+    items:
+      $ref: '#/definitions/BudgetCompteBudgetaire'
+  BudgetEntiteAdmin:
+    type: "object"
+    required:
+      - id
+      - montantEntite
+      - montantInvEntite
+      - montantFctEntite
+    properties:
+      id:
+        type: int
+      montantEntite:
+        type: number
+      montantInvEntite:
+        type: number
+      montantFctEntite:
+        type: number
+  BudgetEntiteAdmins:
+    type: array
+    items:
+      $ref: '#/definitions/BudgetEntiteAdmin'
+  Budget:
+    type: "object"
+    required:
+      - id
+      - dateBudget
+      - montant
+      - montantInvestissement
+      - montantFonction
+    properties:
+      id:
+        type: int
+      dateBudget:
+        type: date
+      montant:
+        type: number
+      montantInvestissement:
+        type: number
+      montantFonction:
+        type: number
+  Budgets:
+    type: array
+    items:
+      $ref: '#/definitions/Budget'
+  CompteBudgetaire:
+    type: "object"
+    required:
+      - id
+      - libelle
+      - code
+      - montantMax
+    properties:
+      id:
+        type: int
+      libelle:
+        type: string
+      code:
+        type: string
+      montantMax:
+        type: number
+  CompteBudgetaires:
+    type: array
+    items:
+      $ref: '#/definitions/CompteBudgetaire'
+  EntiteAdmin:
+    type: "object"
+    required:
+      - id
+      - code
+      - libelle
+    properties:
+      id:
+        type: int
+      code:
+        type: string
+      libelle:
+        type: string
+  EntiteAdmins:
+    type: array
+    items:
+      $ref: '#/definitions/EntiteAdmin'
+
+  Error:
+    type: "object"
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string

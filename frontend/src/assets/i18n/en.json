@@ -1,0 +1,211 @@
+{
+    "from-to": "Elements from {first} to {last} (total {totalRecords})",
+    "new" : "New",
+    "search": "Search",
+    "export": "Export",
+    "validate": "Validate",
+    "search": "Seach...",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "next": "Next",
+    "yes": "Yes",
+    "no": "No",
+    "actions": "Actions",
+    "confirm": "Confirm",
+    "creation": "Creation",
+    "list": "List",
+	"actionPermission":{
+        "reference": "Reference",
+        "libelle": "Libelle",
+        "actionPermission": "Action permission",
+        "tabPan": "Action permission",
+        "header": "Liste des action permissions",
+        "deleteActionPermissionConfirmationMessage": "Are you sure you want to delete action permission",
+        "deleteActionPermissionsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "modelPermissionUser":{
+        "actionPermission": "Action permission",
+        "actionPermissionPlaceHolder": "Select a Action permission",
+        "actionPermissionPlaceHolderFilter": "Search by Action permission",
+        "modelPermission": "Model permission",
+        "modelPermissionPlaceHolder": "Select a Model permission",
+        "modelPermissionPlaceHolderFilter": "Search by Model permission",
+        "value": "Value",
+        "user": "User",
+        "userPlaceHolder": "Select a User",
+        "userPlaceHolderFilter": "Search by User",
+        "subAttribute": "Sub attribute",
+        "modelPermissionUser": "Model permission user",
+        "tabPan": "Model permission user",
+        "header": "Liste des model permission users",
+        "deleteModelPermissionUserConfirmationMessage": "Are you sure you want to delete model permission user",
+        "deleteModelPermissionUsersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+    "role":{
+        "authority": "Authority",
+        "role": "Role",
+        "tabPan": "Role",
+        "header": "Liste des roles",
+        "deleteRoleConfirmationMessage": "Are you sure you want to delete role",
+        "deleteRolesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+
+    "roleUser":{
+        "role": "Role",
+        "rolePlaceHolder": "Select a Role",
+        "rolePlaceHolderFilter": "Search by Role",
+        "user": "User",
+        "userPlaceHolder": "Select a User",
+        "userPlaceHolderFilter": "Search by User",
+        "roleUser": "Role user",
+        "tabPan": "Role user",
+        "header": "Liste des role users",
+        "deleteRoleUserConfirmationMessage": "Are you sure you want to delete role user",
+        "deleteRoleUsersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "user":{
+        "credentialsNonExpired": "Credentials non expired",
+        "enabled": "Enabled",
+        "email": "Email",
+        "accountNonExpired": "Account non expired",
+        "accountNonLocked": "Account non locked",
+        "username": "Username",
+        "password": "Password",
+        "passwordChanged": "Password changed",
+        "modelPermissionUsers": "Model permission users",
+        "roleUsers": "Role users",
+        "RoleUsersPlaceHolder": "Select multiple Roles",
+        "user": "User",
+        "tabPan": "User",
+        "header": "Liste des users",
+        "deleteUserConfirmationMessage": "Are you sure you want to delete user",
+        "deleteUsersConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "modelPermission":{
+        "reference": "Reference",
+        "libelle": "Libelle",
+        "modelPermission": "Model permission",
+        "tabPan": "Model permission",
+        "header": "Liste des model permissions",
+        "deleteModelPermissionConfirmationMessage": "Are you sure you want to delete model permission",
+        "deleteModelPermissionsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+
+    "employe":{
+        "nom": "Nom",
+        "prenom": "Prenom",
+        "entiteAdmin": "Entite admin",
+        "entiteAdminPlaceHolder": "Select a Entite admin",
+        "entiteAdminPlaceHolderFilter": "Search by Entite admin",
+        "employe": "Employe",
+        "tabPan": "Employe",
+        "header": "Liste des employes",
+        "deleteEmployeConfirmationMessage": "Are you sure you want to delete employe",
+        "deleteEmployesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "budgetCompteBudgetaire":{
+        "budget": "Budget",
+        "budgetPlaceHolder": "Select a Budget",
+        "budgetPlaceHolderFilter": "Search by Budget",
+        "compteBudgetaire": "Compte budgetaire",
+        "compteBudgetairePlaceHolder": "Select a Compte budgetaire",
+        "compteBudgetairePlaceHolderFilter": "Search by Compte budgetaire",
+        "montant": "Montant",
+        "montantMin": "Montant Min",
+        "montantMax": "Montant Max",
+        "budgetCompteBudgetaire": "Budget compte budgetaire",
+        "tabPan": "Budget compte budgetaire",
+        "header": "Liste des budget compte budgetaires",
+        "deleteBudgetCompteBudgetaireConfirmationMessage": "Are you sure you want to delete budget compte budgetaire",
+        "deleteBudgetCompteBudgetairesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "budgetEntiteAdmin":{
+        "entiteAdmin": "Entite admin",
+        "entiteAdminPlaceHolder": "Select a Entite admin",
+        "entiteAdminPlaceHolderFilter": "Search by Entite admin",
+        "montantEntite": "Montant entite",
+        "montantEntiteMin": "Montant entite Min",
+        "montantEntiteMax": "Montant entite Max",
+        "montantInvEntite": "Montant inv entite",
+        "montantInvEntiteMin": "Montant inv entite Min",
+        "montantInvEntiteMax": "Montant inv entite Max",
+        "montantFctEntite": "Montant fct entite",
+        "montantFctEntiteMin": "Montant fct entite Min",
+        "montantFctEntiteMax": "Montant fct entite Max",
+        "budget": "Budget",
+        "budgetPlaceHolder": "Select a Budget",
+        "budgetPlaceHolderFilter": "Search by Budget",
+        "budgetEntiteAdmin": "Budget entite admin",
+        "tabPan": "Budget entite admin",
+        "header": "Liste des budget entite admins",
+        "deleteBudgetEntiteAdminConfirmationMessage": "Are you sure you want to delete budget entite admin",
+        "deleteBudgetEntiteAdminsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "budget":{
+        "dateBudget": "Date budget",
+        "dateBudgetMin": "Date budget Min",
+        "dateBudgetMax": "Date budget Max",
+        "montant": "Montant",
+        "montantMin": "Montant Min",
+        "montantMax": "Montant Max",
+        "montantInvestissement": "Montant investissement",
+        "montantInvestissementMin": "Montant investissement Min",
+        "montantInvestissementMax": "Montant investissement Max",
+        "montantFonction": "Montant fonction",
+        "montantFonctionMin": "Montant fonction Min",
+        "montantFonctionMax": "Montant fonction Max",
+        "budgetEntiteAdmins": "Budget entite admins",
+        "budget": "Budget",
+        "tabPan": "Budget",
+        "header": "Liste des budgets",
+        "deleteBudgetConfirmationMessage": "Are you sure you want to delete budget",
+        "deleteBudgetsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "compteBudgetaire":{
+        "libelle": "Libelle",
+        "code": "Code",
+        "montantMax": "Montant max",
+        "montantMaxMin": "Montant max Min",
+        "montantMaxMax": "Montant max Max",
+        "compteBudgetaire": "Compte budgetaire",
+        "tabPan": "Compte budgetaire",
+        "header": "Liste des compte budgetaires",
+        "deleteCompteBudgetaireConfirmationMessage": "Are you sure you want to delete compte budgetaire",
+        "deleteCompteBudgetairesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "entiteAdmin":{
+        "code": "Code",
+        "libelle": "Libelle",
+        "employe": "Employe",
+        "entiteAdmin": "Entite admin",
+        "tabPan": "Entite admin",
+        "header": "Liste des entite admins",
+        "deleteEntiteAdminConfirmationMessage": "Are you sure you want to delete entite admin",
+        "deleteEntiteAdminsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+"appName": "GED"
+}
+
+
